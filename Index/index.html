@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<!---------------------navigation bar------------------------>
+	<nav>
+		<input type="checkbox" id="check">   <!-- button for nav menu(displayed only before  900px) -->
+		<label for="check" class="checkbtn"><i class="fa fa-bars" aria-hidden="true"> </i></label>
+		<div  class="Brand">         <!-- site logo -->
+			<img src="img/logo-3.jpeg" alt=".." class="logo-img">
+		</div>
+		<!-- nav menu starts here -->
+		<ul class=" horizontal-list navbar-list" id="navigation">  
+			<li> <a href="#" class="white-link no-decoration active"> HOME </a> </li>
+			<li> <a href="#" class="white-link no-decoration"> FAVOURITES </a> </li>
+      <li><a href="#" class="white-link no-decoration" id="queue-link"> QUEUE</a></li>
+		</ul>
+
+		<div id="info">
+			<!-- search bar starts here -->
+
+			<input type="checkbox" id="check-search">
+			<label for="check-search" class="search-checkbtn"><i class="fa fa-search"></i> </label>   <!-- displayed only before 600px -->
+			<form id="search-form">
+			<button type="submit" class="search-button " > <i class="fa fa-search" aria-hidden="true"> </i> </button>  
+			<input type="text" name="search" placeholder="search" class="search-input">
+			  
+			</form>
+			<!-- notifications icon and menu -->
+			<span id="notifications">
+			<a href="#new-notifications" class="white-link no-decoration"><i class="fa fa-bell" aria-hidden="true"></i> </a>
+			<div id="new-notifications">
+				<a href="#" class="close-link white-link no-decoration">X</a>
+				<span>No new notifications!</span>
+			</div>
+        	</span>
+        	<!-- user-login -->
+        	<span id="user">
+        	<a href="#log-in-section" class="white-link no-decoration" id="log-in-icon"><i class="fa fa-user" aria-hidden="true"></i></a> 	<!-- above link only apeears below 600px -->
+        	<a href="#log-in-section" class="white-link no-decoration" id="log-in-link">LOG IN</a>
+        	<!-- log in lightbox -->
+        	<div id="log-in-section">
+        		<div id="visible-area">
+        			<form>
+        				<label for="username">USERNAME</label>
+        				<input type="text" name="username" placeholder="username"  class="login-form" id="username">
+        				<label for="password">PASSWORD</label>
+        				<input type="password" name="password" placeholder="password" class="login-form" id="password">
+        				<button type="submit" class="submit-button">LOG IN</button>
+        				<a href="#" id="sign-up-link" class="no-decoration">Not a user? click here to sign up</a>
+        				<a href="#" id="close-login" class="no-decoration">X</a>
+        			</form>
+
+        		</div>	
+
+        	</div>	
+        	</span>
+    	</div>
+	</nav>
+
+	<!----------------------- body----------------->
+
+	<main>
+	
+  	<section>
+  		<div id="image-carousel">
+  			<img src="img/carousel-img-6.png" class="img-c img-c-1">
+  			<img src="img/carousel-img-7.png" class="img-c img-c-2">
+  			<img src="img/carousel-img-8.png" class="img-c img-c-3">
+  		</div>
+
+  		<div id="latest-release">
+  		 <div class="section-heading">  Latest Release </div>
+  		 <div id="track-container">
+  		 	<div class="latest-track">
+          <div class="latest-track-img-cont">
+            <a href="#player"> <img src="img/latest-release-old-skool.png"></a>
+            <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div>
+          </div>
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name"> Old Skool</span>
+  		 				<span class="song-date">May 10,2020</span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-1" id="song-checkbox-1">
+  		 					<label for="song-checkbox-1" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play Now</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Add to Queue</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<div class="song-duration">
+  		 					<span>4:20</span>
+  		 				</div>
+  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+  		 	<div class="latest-track">
+          <div class="latest-track-img-cont">
+            <a href="#player"> <img src="img/latest-release-demons.png"></a>
+            <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div>
+          </div>
+  		 		
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name">Demons</span>
+  		 				<span class="song-date">May 10,2020</span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-2" id="song-checkbox-2">
+  		 					<label for="song-checkbox-2" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play Now</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Add to Queue</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<div class="song-duration">
+  		 					<span>3:56</span>
+  		 				</div>
+  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+  		 	<div class="latest-track">
+          <div class="latest-track-img-cont">
+            <a href="#player"> <img src="img/latest-release-skechers.png"></a>
+            <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div>
+          </div>
+
+  		 		
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name">Skechers</span>
+  		 				<span class="song-date">May 10,2020</span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-3" id="song-checkbox-3">
+  		 					<label for="song-checkbox-3" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play Now</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Add to Queue</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<div class="song-duration">
+  		 					<span>1:50</span>
+  		 				</div>
+  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+  		 	<div class="latest-track">
+          <div class="latest-track-img-cont">
+            <a href="#player"> <img src="img/latest-release-dont-look.png"></a>
+            <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div>
+
+          </div>
+
+  		 		
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name">Don't Look</span>
+  		 				<span class="song-date">May 10,2020</span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-4" id="song-checkbox-4">
+  		 					<label for="song-checkbox-4" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play Now</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Add to Queue</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<div class="song-duration">
+  		 					<span>4:10</span>
+  		 				</div>
+  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+
+
+  		 </div>
+  		</div>
+
+  		<div id="popular-artists">
+        <div class="section-heading">  Popular Artists </div>
+        <div id="artists-section">
+          <div class="artist-image-container">
+            <img src="img/singers-karan-aujla.png">
+            <div class="artist-name">Karan Aujla</div>
+          </div>
+          <div class="artist-image-container">
+            <img src="img/singers-maroon-5.png">
+            <div class="artist-name">Maroon 5</div>
+          </div>
+          <div class="artist-image-container">
+            <img src="img/singers-billie.png">
+            <div class="artist-name">Billie Eilish</div>
+          </div>
+          <div class="artist-image-container">
+            <a href="../artists/artist-imagine-dragons.html">
+              <img src="img/singers-imagine-dragons.png">
+            <div class="artist-name">Imagine Dragons</div>
+            </a>
+            
+          </div>
+          <div class="artist-image-container">
+            <img src="img/singers-coldplay.png">
+            <div class="artist-name">Coldplay</div>
+          </div>
+          <div class="artist-image-container">
+            <img src="img/singers-sidhu.jpg">
+            <div class="artist-name">Sidhu Moosewala</div>
+          </div>
+        </div>
+  			
+  		</div>
+  		
+  		<div id="mood">
+  			<div class="section-heading">  Mood </div>
+        <div id="mood-section">
+        <div class="mood-img"> 
+             <img src="img/mood-inspiration.png">
+             <div class="mood-name">Inspirational</div>
+        </div>
+        <div class="mood-img"> 
+             <img src="img/mood-workout.png">
+             <div class="mood-name">Workout</div>
+        </div>
+        <div class="mood-img"> 
+             <img src="img/mood-dance.png">
+             <div class="mood-name">Dance</div>
+        </div>
+        <div class="mood-img"> 
+             <img src="img/mood-sad.png">
+             <div class="mood-name">Sad</div>
+        </div>
+        <div class="mood-img"> 
+             <img src="img/mood-relaxed.png">
+             <div class="mood-name">Relaxed</div>
+        </div>
+        <div class="mood-img"> 
+             <img src="img/mood-feelgood.png">
+             <div class="mood-name">Feel Good</div>
+        </div>
+  		</div>
+
+  		<div id="stations">
+  			<div class="section-heading">  Stations </div>
+        <div id="station-section">
+            <div id="station-1" class="station-img">
+            <div class="dark-overlay"></div>
+            <div class="station-name">Party</div>
+           </div>
+          
+          <div id="station-2" class="station-img">
+            <div class="dark-overlay"></div>
+            <div class="station-name">EDM</div>
+          </div>
+          <div id="station-3" class="station-img">
+            <div class="dark-overlay"></div>
+            <div class="station-name">Road Trip</div>
+          </div>
+        </div>
+  		</div>
+
+  		<div id="latest-eng">
+        <div class="section-heading">  Latest English </div>
+        <div class="latest-by-language">
+          <div class="latest-song">
+            <img src="img/latest-E-be-kind.png">
+            <div class="track-name">Be Kind</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-E-go-crazy.png">
+            <div class="track-name">Go Crazy</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-E-NRI.png">
+            <div class="track-name">N.R.I</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-E-righteous.png">
+            <div class="track-name">Righteous</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-E-stuck-with-u.png">
+            <div class="track-name">Stuck With U</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-E-the-scotts.png">
+            <div class="track-name">The Scotts</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          
+        </div>
+  			
+  		</div>
+
+  		<div id="latest-hindi">
+        <div class="section-heading">  Latest Hindi </div>
+        <div class="latest-by-language">
+          <div class="latest-song">
+            <img src="img/latest-H-aaj-bhi.png">
+            <div class="track-name">Aaj Bhi</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-H-guzar-jayega.png">
+            <div class="track-name">Guzar Jayega</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-H-move.png">
+            <div class="track-name">Move</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-H-mummy.png">
+            <div class="track-name">Mummy</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-H-teri-mitti.png">
+            <div class="track-name">Teri Mitti</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          <div class="latest-song">
+            <img src="img/latest-H-teri-yaari.png">
+            <div class="track-name">Teri Yaari</div>
+            <div class="track-date">May 11,2020</div>
+          </div>
+          
+        </div>
+
+  		</div>
+		
+	</section>
+	
+
+	<aside>
+		<div  id="q-heading">
+      <div class="section-heading">  Queue </div>
+      <div id="q-menu">
+        <input type="checkbox" id="q-dropdown-check">
+        <label for="q-dropdown-check">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>      
+        </label>
+        <ul>
+          <li><a href="#"> Playlists </a></li>
+          <li><a href="#"> Favourite Songs</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    <div id="q-tracks">
+      <ol>
+        <li>
+          <img src="img/Q/allah-ve.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Allah Ve </div>
+              <div class="singer-name"> Jassi Gill </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/bad-liar.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Bad Liar </div>
+              <div class="singer-name"> Imagine Dragons</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/chitta-kurta.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Chitta Kurta</div>
+              <div class="singer-name">Karan Aujla </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/demons.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Demons</div>
+              <div class="singer-name">Imagine Dragons </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/dont-look.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Don't Look</div>
+              <div class="singer-name">Karan Aujla </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/hall-of-fame.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Hall of Fame</div>
+              <div class="singer-name"> The Script</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/legend.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Legend </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/loose-yourself.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Loose yourself</div>
+              <div class="singer-name">Eminem </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/na-na-na.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Na Na Na</div>
+              <div class="singer-name"> Karan Aujla</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/not-afraid.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Not Afraid </div>
+              <div class="singer-name"> Eminem</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/old-skool.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Old Skool</div>
+              <div class="singer-name"> Prem Dhillon</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/outlaw.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Outlaw </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/red-eyes.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Red Eyes </div>
+              <div class="singer-name"> Karan Aujla</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/same-beef.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Same Beef </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/skechers.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Skechers </div>
+              <div class="singer-name"> DripReport </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+      </ol>
+    </div>
+
+	</aside>	
+
+
+
+	</main>
+  <footer id="player">
+    <div id="player-contents"> 
+      <div id="curr-track-info">
+        <img src="img/Q/old-skool.png">
+        <div id="curr-track-details">
+          <div id="curr-track-name" class="track-name"> Old Skool</div>
+          <div id="curr-track-artist" class="singer-name">Sidhu Moosewala </div>
+
+        </div>
+        <div class="track-buttons" id="like-buttons">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <i class="fa fa-ban" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div id="track-seeker-container">
+        <div id="curr-track-buttons">
+          <i class="fa fa-random" aria-hidden="true"></i>
+          <i class="fa fa-step-backward" aria-hidden="true"></i>
+          <i class="fa fa-pause" aria-hidden="true"></i>
+          <i class="fa fa-step-forward" aria-hidden="true"></i>
+          <i class="fa fa-retweet" aria-hidden="true"></i>
+
+        </div>
+        <div id="track-seeker">
+          <div id="time-elapsed" class="song-duration">1:23</div>
+          <div id="seeker-display">
+            <div id="curr-progress"></div>
+            <div id="seeker-marker"><i class="fa fa-circle" aria-hidden="true"></i></div> 
+          </div>
+          <div id="total-time" class="song-duration">4:20</div>
+        </div>
+        
+      </div>
+      <div id="player-toggle">
+
+        <div id="volume-toggle">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+          <div id="total-volume">
+            <div id="curr-volume"> </div>
+          <div id="vol-marker"><i class="fa fa-circle" aria-hidden="true"></i></div>
+          </div>
+          
+
+        </div>
+        <i class="fa fa-expand" aria-hidden="true"></i>
+        
+      </div>
+
+
+    </div>
+    
+  </footer> 
+
+
+
+</body>
+</html> 

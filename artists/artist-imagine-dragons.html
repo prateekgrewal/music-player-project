@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagine Dragons</title>
+
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="imagine-dragons.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!---------------------navigation bar------------------------>
+	<nav>
+		<input type="checkbox" id="check">   <!-- button for nav menu(displayed only before  900px) -->
+		<label for="check" class="checkbtn"><i class="fa fa-bars" aria-hidden="true"> </i></label>
+		<div  class="Brand">         <!-- site logo -->
+			<img src="img/logo-3.jpeg" alt=".." class="logo-img">
+		</div>
+		<!-- nav menu starts here -->
+		<ul class=" horizontal-list navbar-list" id="navigation">  
+			<li> <a href="#" class="white-link no-decoration"> HOME </a> </li>
+			<li> <a href="#" class="white-link no-decoration"> FAVOURITES </a> </li>
+      <li><a href="#" class="white-link no-decoration" id="queue-link"> RECENTLY PLAYED</a></li>
+		</ul>
+
+		<div id="info">
+			<!-- search bar starts here -->
+
+			<input type="checkbox" id="check-search">
+			<label for="check-search" class="search-checkbtn"><i class="fa fa-search"></i> </label>   <!-- displayed only before 600px -->
+			<form id="search-form">
+			<button type="submit" class="search-button " > <i class="fa fa-search" aria-hidden="true"> </i> </button>  
+			<input type="text" name="search" placeholder="search" class="search-input">
+			  
+			</form>
+			<!-- notifications icon and menu -->
+			<span id="notifications">
+			<a href="#new-notifications" class="white-link no-decoration"><i class="fa fa-bell" aria-hidden="true"></i> </a>
+			<div id="new-notifications">
+				<a href="#" class="close-link white-link no-decoration">X</a>
+				<span>No new notifications!</span>
+			</div>
+        	</span>
+        	<!-- user-login -->
+        	<span id="user">
+        	<a href="#log-in-section" class="white-link no-decoration" id="log-in-icon"><i class="fa fa-user" aria-hidden="true"></i></a> 	<!-- above link only apeears below 600px -->
+        	<a href="#log-in-section" class="white-link no-decoration" id="log-in-link">LOG IN</a>
+        	<!-- log in lightbox -->
+        	<div id="log-in-section">
+        		<div id="visible-area">
+        			<form>
+        				<label for="username">USERNAME</label>
+        				<input type="text" name="username" placeholder="username"  class="login-form" id="username">
+        				<label for="password">PASSWORD</label>
+        				<input type="password" name="password" placeholder="password" class="login-form" id="password">
+        				<button type="submit" class="submit-button">LOG IN</button>
+        				<a href="#" id="sign-up-link" class="no-decoration">Not a user? click here to sign up</a>
+        				<a href="#" id="close-login" class="no-decoration">X</a>
+        			</form>
+
+        		</div>	
+
+        	</div>	
+        	</span>
+    	</div>
+	</nav>
+
+	<main>
+		<section>
+			<div id="about-artist">
+
+				<img src="img/imagine-dragons-main.jpg">
+				<div id="about-artist-text">
+					<div id="about-artist-header">
+						<div>
+							<div id="about-artist--name">Imagine Dragons</div>
+							<div id="about-artist--genre">American Pop Rock Band </div>
+						</div>
+						<div id="followers">851 Followers</div>
+					</div>
+					<p id="about-artist-para">
+						Imagine Dragons is an American pop rock band from Las Vegas, Nevada, consisting of lead singer Dan Reynolds, lead guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman. The band first gained exposure with the release of their single "It's Time", followed by their award-winning debut studio album Night Visions (2012), which resulted in the chart-topping singles "Radioactive" and "Demons".
+					</p>
+					<div id="about-artist-buttons">
+						<button type="button" id="play-all"> Play All</button>
+						<button type="button" id="follow-button"> Follow </button>
+					</div>
+					<div id="about-artist-footer">
+						<span>247 Tracks | 128 Albums</span>
+					</div>
+
+				</div>
+				
+
+			</div>
+
+			<div id="songs-by-artist">
+				
+				<ol>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/allah-ve.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Allah Ve </div>
+              <div class="singer-name"> Jassi Gill </div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/bad-liar.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Bad Liar </div>
+              <div class="singer-name"> Imagine Dragons</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/chitta-kurta.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Chitta Kurta</div>
+              <div class="singer-name">Karan Aujla </div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/demons.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Demons</div>
+              <div class="singer-name">Imagine Dragons </div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/dont-look.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Don't Look</div>
+              <div class="singer-name">Karan Aujla </div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"> <img src="img/Q/hall-of-fame.png"></a>
+         
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Hall of Fame</div>
+              <div class="singer-name"> The Script</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+
+        	<a href="#player" class="footer-link"><img src="img/Q/legend.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Legend </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/loose-yourself.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Loose yourself</div>
+              <div class="singer-name">Eminem </div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/na-na-na.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Na Na Na</div>
+              <div class="singer-name"> Karan Aujla</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/not-afraid.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Not Afraid </div>
+              <div class="singer-name"> Eminem</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/old-skool.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Old Skool</div>
+              <div class="singer-name"> Prem Dhillon</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/outlaw.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Outlaw </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/red-eyes.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Red Eyes </div>
+              <div class="singer-name"> Karan Aujla</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+          
+        	<a href="#player" class="footer-link"><img src="img/Q/same-beef.png"></a>
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Same Beef </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+        	<a href="#player" class="footer-link"><img src="img/Q/skechers.png"></a>
+          
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Skechers </div>
+              <div class="singer-name"> DripReport </div>
+            </div>
+            <div class="main-section-icons">
+            	<i class="fa fa-heart-o" aria-hidden="true"></i>
+            	<div class="empty-space"></div>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          
+        </li>
+      </ol>
+
+
+			</div>
+			
+
+
+		</section>
+		
+		<aside>
+			<div id="similar-artists">
+				<div class="aside-heading">
+					<div class="section-heading">Similar Artists</div>
+				    <a href="#" class="no-decoration"><div class="view-all-link"> View All</div> </a>
+				    
+				</div>
+			<div id="list-of-artists">
+
+				<div class="latest-track">
+          <div class="latest-track-img-cont">
+            <a href="#player"> <img src="img/latest-release-old-skool.png"></a>
+            <!-- <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div> -->
+          </div>
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name"> Sidhu Moosewala</span>
+  		 				<span class="song-date">Punjabi singer</span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-1" id="song-checkbox-1">
+  		 					<label for="song-checkbox-1" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play All</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Follow</a>
+  		 						</li>
+  		 						<!-- <li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li> -->
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<!-- <div class="song-duration">
+  		 					<span>4:20</span>
+  		 				</div> -->
+  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+
+
+
+		    <div class="latest-track">
+          		<div class="latest-track-img-cont">
+            		<a href="#player"> <img src="img/latest-release-demons.png"></a>
+            		<!-- <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div> -->
+          		</div>
+  		 		
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name">Linkin Park</span>
+  		 				<span class="song-date">Rock Band </span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-2" id="song-checkbox-2">
+  		 					<label for="song-checkbox-2" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play All</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Follow</a>
+  		 						</li>
+  		 						<!-- <li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li> -->
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<!-- <div class="song-duration">
+  		 					<span>3:56</span>
+  		 				</div> -->
+  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+  		 	<div class="latest-track">
+          <div class="latest-track-img-cont">
+            <a href="#player"> <img src="img/latest-release-dont-look.png"></a>
+            <!-- <div class="track-play-icon"> <i class="fa fa-play" aria-hidden="true"></i></div> -->
+          </div>
+
+  		 		
+  		 		<div class="track-details">
+  		 			<div class="name-date">
+  		 				<span class="song-name">Karan Aujla</span>
+  		 				<span class="song-date">Punjabi Singer</span>
+  		 			</div>
+  		 			<div class="song-menu">
+  		 				<div class="menu-details">
+  		 					<input type="checkbox" class="song-checkbox-3" id="song-checkbox-3">
+  		 					<label for="song-checkbox-3" class="song-checkbox-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></label>
+  		 					<ul>
+  		 						<li>
+  		 							
+  		 							<a href="#player"><i class="fa fa-play" aria-hidden="true"></i>Play All</a>
+  		 						</li>
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Follow</a>
+  		 						</li>
+  		 						<!-- <li>
+  		 							
+  		 							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Favourites</a>
+  		 						</li> -->
+  		 						<li>
+  		 							
+  		 							<a href="#"><i class="fa fa-info" aria-hidden="true"></i>Get info</a>
+  		 						</li>
+
+  		 					</ul>
+  		 				</div>
+  		 				<!-- <div class="song-duration">
+  		 					<span>1:50</span>
+  		 				</div>
+ -->  		 				
+  		 			</div>
+  		 		</div>
+  		 	</div>
+
+
+				</div>
+			</div>
+			<div id="recently-played">
+
+				<div class="aside-heading">
+					<div class="section-heading">Recently Played</div>
+				    <a href="#" class="no-decoration"><div class="view-all-link"> View All</div> </a>
+				    
+				</div>
+
+				<div id="list-of-songs">
+
+					<ol>
+        <li>
+          <img src="img/Q/allah-ve.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Allah Ve </div>
+              <div class="singer-name"> Jassi Gill </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/bad-liar.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Bad Liar </div>
+              <div class="singer-name"> Imagine Dragons</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/chitta-kurta.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Chitta Kurta</div>
+              <div class="singer-name">Karan Aujla </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/demons.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Demons</div>
+              <div class="singer-name">Imagine Dragons </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/dont-look.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Don't Look</div>
+              <div class="singer-name">Karan Aujla </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/hall-of-fame.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Hall of Fame</div>
+              <div class="singer-name"> The Script</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/legend.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Legend </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/loose-yourself.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Loose yourself</div>
+              <div class="singer-name">Eminem </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/na-na-na.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Na Na Na</div>
+              <div class="singer-name"> Karan Aujla</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/not-afraid.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Not Afraid </div>
+              <div class="singer-name"> Eminem</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/old-skool.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name"> Old Skool</div>
+              <div class="singer-name"> Prem Dhillon</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/outlaw.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Outlaw </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/red-eyes.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Red Eyes </div>
+              <div class="singer-name"> Karan Aujla</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/same-beef.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Same Beef </div>
+              <div class="singer-name"> Sidhu Moosewala</div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+        <li>
+          <img src="img/Q/skechers.png">
+          <div class="q-track-details">
+            <div class="song-details">
+              <div class="track-name">Skechers </div>
+              <div class="singer-name"> DripReport </div>
+            </div>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+        </li>
+      </ol>
+
+				</div>
+				
+
+			</div>
+
+		</aside>
+
+	</main>
+
+
+
+	<footer id="player">
+    <div id="player-contents"> 
+      <div id="curr-track-info">
+        <img src="img/Q/old-skool.png">
+        <div id="curr-track-details">
+          <div id="curr-track-name" class="track-name"> Old Skool</div>
+          <div id="curr-track-artist" class="singer-name">Sidhu Moosewala </div>
+
+        </div>
+        <div class="track-buttons" id="like-buttons">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <i class="fa fa-ban" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div id="track-seeker-container">
+        <div id="curr-track-buttons">
+          <i class="fa fa-random" aria-hidden="true"></i>
+          <i class="fa fa-step-backward" aria-hidden="true"></i>
+          <i class="fa fa-pause" aria-hidden="true"></i>
+          <i class="fa fa-step-forward" aria-hidden="true"></i>
+          <i class="fa fa-retweet" aria-hidden="true"></i>
+
+        </div>
+        <div id="track-seeker">
+          <div id="time-elapsed" class="song-duration">1:23</div>
+          <div id="seeker-display">
+            <div id="curr-progress"></div>
+            <div id="seeker-marker"><i class="fa fa-circle" aria-hidden="true"></i></div> 
+          </div>
+          <div id="total-time" class="song-duration">4:20</div>
+        </div>
+        
+      </div>
+      <div id="player-toggle">
+
+        <div id="volume-toggle">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+          <div id="total-volume">
+            <div id="curr-volume"> </div>
+          <div id="vol-marker"><i class="fa fa-circle" aria-hidden="true"></i></div>
+          </div>
+          
+
+        </div>
+        <i class="fa fa-expand" aria-hidden="true"></i>
+        
+      </div>
+
+
+    </div>
+    
+  </footer> 
+
+
+
+
+
+
+</body>
+</html>
