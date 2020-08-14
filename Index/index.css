@@ -165,7 +165,7 @@ form{
 }
 
 #new-notifications:target{
-	width:300px;
+	width:30%;
 	transform: scale(1,1);
 	color: white;
 
@@ -447,7 +447,7 @@ section{
 .latest-track-img-cont{
 	width: 20%;
 	margin-right: 2%;
-	position: relative;
+	/* position: relative; */
 	transition: 200ms all ease-in-out 100ms;
 }
 
@@ -470,9 +470,9 @@ section{
 	transition: 200ms all ease-in-out 100ms;
 	z-index: -1;
 }
-.latest-track-img-cont:hover .track-play-icon{
+/* .latest-track-img-cont:hover .track-play-icon{
 	display: inline-block;
-}
+} */
 
 
 .track-details{
@@ -656,7 +656,7 @@ line-height: 1.7vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	/* position: relative; */
 	transition: 200ms transform ease-in-out;
 }
 .station-img:hover{
@@ -683,13 +683,14 @@ line-height: 1.7vw;
 }
 
 .station-name{
-	font-size:1.7vw;
+	font-size:1.9vw;
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	/*margin-top: 10%;*/
-	z-index: 1;
+	/* z-index: 1; */
+	text-shadow: 0 0 8px black;
 }
-.dark-overlay{
+/* .dark-overlay{
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -697,7 +698,7 @@ line-height: 1.7vw;
 	left: 0;
 	background-color: rgba(0,0,0,0.3);
 
-}
+} */
 
 
 
@@ -764,7 +765,7 @@ aside{
 
 
 /*--------queue drop down menu----------*/
-#q-menu{
+/* #q-menu{
 	position: relative;
 	margin-right: 2vw;
 }
@@ -808,7 +809,7 @@ aside{
 #q-menu ul li:hover{
 	background-color: lightgrey;
 	cursor: pointer;
-}
+} */
 
 
 /*-------------songs in the queue-----------*/
@@ -823,6 +824,7 @@ aside{
 	width: 90%;
 	margin: 1vw 2vw;
 	transition: 50ms all ease-in-out;
+	cursor: pointer;
 }
 
 #q-tracks ol li:hover{
@@ -838,7 +840,7 @@ aside{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	/* position: relative; */
 	width: 70%;
 	font-family: 'Poppins', sans-serif;
 }

@@ -173,7 +173,7 @@ form{
 }
 
 #new-notifications:target{
-	width:300px;
+	width:33%;
 	transform: scale(1,1);
 	color: white;
 
@@ -546,7 +546,7 @@ section{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	/* position: relative; */
 	width: 90%;
 	font-family: 'Poppins', sans-serif;
 }
@@ -644,12 +644,11 @@ aside{
 	width:100%;
 	cursor: pointer;
 	transition: 200ms all ease-in-out;
-	z-index: 0;
 }
 .latest-track img:hover{
 	opacity: 0.3;
 }
-.track-play-icon{
+/* .track-play-icon{
 	position: absolute;
 	color: white;
 	top: 30%;
@@ -661,7 +660,7 @@ aside{
 }
 .latest-track-img-cont:hover .track-play-icon{
 	display: inline-block;
-}
+} */
 
 
 .track-details{
@@ -696,7 +695,7 @@ aside{
 }
 
 
-/*---droop-down-menu-----*/
+/*---drop-down-menu-----*/
 
 .menu-details{
 	position: relative;
@@ -759,6 +758,8 @@ line-height: 1.7vw;
 
 
 
+
+
 /*----------------recently played---------------*/
 
 #list-of-songs{
@@ -782,6 +783,7 @@ line-height: 1.7vw;
 	margin: 1vw 2vw;
 	/*background-color: #1a1e33;*/
 	transition: 50ms all ease-in-out;
+	cursor: pointer;
 }
 
 #list-of-songs ol li::before{
@@ -807,7 +809,7 @@ line-height: 1.7vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	/* position: relative; */
 	width: 70%;
 	font-family: 'Poppins', sans-serif;
 }
